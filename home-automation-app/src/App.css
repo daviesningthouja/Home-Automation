@@ -1,0 +1,321 @@
+.home{
+  height: 100dvh;
+}
+
+.nav{
+  height: 65px;
+  background: rgb(14, 38, 220);
+  display: flex;
+  align-items: center;
+}
+
+.nav-head{
+  padding-left: 20px;
+
+}
+a{
+  text-decoration: none;
+}
+.head-txt{
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #111827;
+}
+.main{
+  padding: 20px 30px;
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  justify-content: space-between;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 57%, rgba(0,212,255,1) 100%);
+
+}
+.box-1{
+  width: 45%;
+  /* flex: 1; */
+  height: 100%;
+}
+.box-2{
+  /* width: 50%; */
+}
+.btn-side{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 30px;
+}
+
+.btn{
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  border-radius: 20px;
+}
+.btn-red:active{
+ 
+  transition: all;
+  animation-delay: 0.2s;
+}
+
+.btn-red{
+  border: solid 2px blue;
+
+}
+.btn-green{
+  background-color: #2dde59 ;
+}
+
+.container {
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2.5rem; gap-10 */
+  height: 100vh;
+  width: 100%;
+  background-color: #f9fafb; /* bg-gray-50 */
+  padding: 0px 50px; /* p-10 */
+  font-family: 'Circular Web', sans-serif; /* font-circular-web */
+  letter-spacing: -0.015em; /* tracking-tight */
+}
+
+.intro-txt {
+  margin-top: 10rem; 
+}
+
+.title {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.centered-section {
+  display: flex;
+  height: 100vh;
+  align-items: center; /* place-items-center */
+  justify-content: center;
+  background-color: #111827; /* bg-gray-900 */
+}
+
+.back-icon {
+  position: absolute;
+  top: 2.25rem; /* top-9 */
+  left: 2rem; /* left-8 */
+  color: #f9fafb; /* text-gray-50 */
+}
+
+.welcome-text {
+  font-family: 'Circular Web', sans-serif; /* font-circular-web */
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #f3f4f6; /* text-gray-100 */
+  text-align: center;
+}
+
+
+/* Login form */
+.body{
+  background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+.wrapper{
+  width:350px;
+  background: rgb(244, 217, 225,.09);
+  border: 2px solid rgb(255,255,255,.2);
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+  font-family: var(--fontSBold);
+}
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+ 
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 40%;
+  background: transparent;
+  
+  outline: none;
+  border: 2px solid rgba(255,255,255,.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 30px;
+
+
+}
+.input-box input:focus{
+  background: transparent;
+}
+.input-box input::placeholder{
+  font-family: var(--fontSLight);
+  color: #fff;
+}
+.input-box .icons{
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  transform: translateY(-50%);
+  font-size: 25px;
+  width: 50px;
+}
+
+.wrapper .remember-forget{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 1px 0 14px;
+  font-family: var(--fontSNormal);
+}
+.remember-forget label input{
+  accent-color: #fff;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.remember-forget a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.remember-forget a:hover{
+  text-decoration: underline ;
+}
+.wrapper button{
+  width: 100%;
+  height:45px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.montserrat-front {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-size: 28px;
+}
+
+
+/*Weather UI*/
+.app{
+   min-height: 31rem;
+  display: grid;
+  /* background: #e2d4ff; */
+  
+}
+
+.weather{
+  place-self: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  /* background-image: linear-gradient(45deg, #2f4680, #500ae4); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar{
+  display:flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-bar input{
+  /* 50px */
+  height: 35px;
+  border: none;
+  outline:none;
+  border-radius:40px;
+  padding-left: 25px;
+  color:#626262;
+  background: #ebfffc;
+  font-size: 18px;
+}
+
+.search-bar img{
+  width: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #ebfffc;
+  cursor: pointer;
+}
+.temperature{
+  color: #fff;
+  font-size:80px;
+  line-height:1;
+}
+.location{
+  color:#fff;
+  font-size: 30px;
+}
+
+.weather-data{
+  width: 100%;
+  margin-top: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.weather-data .col{
+  display: flex;
+  align-items: flex-start;
+  gap:12px;
+  font-size: 16px ;
+}
+
+.weather-data .col span{
+  display: block;
+  font-size: 16px;
+}
+.weather-data .col img{
+  width:26px;
+  margin: 10px;
+}
+
+.weather-H-icon{
+  height: 250px;
+  width: 250px;
+}
