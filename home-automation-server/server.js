@@ -13,13 +13,13 @@ app.use(bodyParser.json());
 // MongoDB Connection connected on db file
 connection();
 
-const buttonRoutes = require("./routes/buttonRoute");
+
 const relayRoutes = require("./routes/relayRoute")
 const userRoutes = require("./routes/userRoute");
 const {authmiddleware} = require('./middleware/authmiddleware')
 // Define Routes
 app.get("/", (req, res) => res.send("Server is running"));
-app.use("/api/buttons", buttonRoutes);
+
 // Routes
 app.use("/api/relays",relayRoutes);
 app.use("/api/auth",userRoutes);
